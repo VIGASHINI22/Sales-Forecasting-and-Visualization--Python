@@ -1,0 +1,37 @@
+<div class="powerbi">
+       <iframe title="review" width="500" height="500" src="https://app.powerbi.com/reportEmbed?reportId=33b65f9f-3501-4b46-8525-4718516ae480&autoAuth=true&ctid=03cff094-2d3a-44a4-af58-db6383b3845d" frameborder="0" allowFullScreen="true"></iframe>
+</div>
+<canvas id="canvas">  {{charts}} </canvas>
+<div class="body">
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Enter Data Here</h2>
+            <input type="number" (change)="getName(name.value)"#name id="name" /><br> <br>                
+            <input type="file" (change)="getFile($event)"#file id="file"/><br> <br><br>
+            <input type="button" value="UPLOAD HERE"(click)="submitData()" #button1 id="button1" /><br><br>
+            <input type="button" value="RESULT"(click)="goto()" #button id="button" /><br><br>
+            <input type="button" value="VISUALIZE"(click)="visualize()" #button2 id="button2" /><br> <br>
+    </div>
+    <div class="main_content">
+        <div *ngIf ="isShow">
+                <table>
+                        <thead>
+                                <tr>
+                                        <th>Date</th>
+                                        <th>Sales</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr *ngFor= "let list of data">
+                                        <td>{{list.Date}}</td>
+                                        <td>{{list.Sales}}</td>
+                                </tr>
+                        </tbody>
+                </table>
+        </div>
+    </div>
+</div>
+</div>
+<!-- <canvas id="canvas"> 
+                {{charts}}
+        </canvas> -->

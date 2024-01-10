@@ -1,0 +1,28 @@
+.block{
+        justify-content: center;
+        align-items: center;
+    form{
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+        align-items:center;
+        width:80%;
+        h2{
+            color:white;
+            font-family:Verdana, Geneva, Tahoma;
+            font-weight:600;
+  
+        }
+        .inp{
+            width:85%;
+            padding:10px 15px;
+             margin:10px;   
+            }
+        .btns{
+               display:flex;
+               width:100%;
+               justify-content:space-between;
+             }
+
+    }
+}

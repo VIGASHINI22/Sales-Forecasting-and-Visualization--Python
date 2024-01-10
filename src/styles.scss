@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+button{
+    padding:15px 10px;
+    background-color: red ;
+    margin-right: 5px;
+    color:white;
+    font-weight:600;
+    border:none;
+    width:100px;
+    cursor: pointer;
+}
+button:disabled{
+    background-color: gray;
+    opacity:0.8;
+    color:white;
+    cursor:not-allowed;
+}
+.block{
+    width:320px;
+    background:linear-gradient(270deg,#2E3192, #1BFFFF) ;
+    height:350px;
+    display:flex;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+background-color: white;
+//background-image: url('./assets/images/img1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
