@@ -1,27 +1,24 @@
-# SALES FORECASTING AND VISUALIZATION
+# Sales Forecasting and Visualization with Prophet (Python)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+## Overview
 
-## Development server
+This project leverages the Prophet algorithm in Python for sales forecasting and visualization. Prophet is a robust time-series forecasting tool developed by Facebook that can handle daily observations that display patterns on different time scales. The goal is to provide accurate sales forecasts along with interactive visualizations for better insights into sales trends.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Sales Forecasting:** Utilizes the Prophet algorithm to predict future sales based on historical data and trends.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Interactive Visualizations:** Generates visual representations of sales data and forecasts using tools such as Matplotlib and Plotly.
 
-## Build
+- **Customizable Parameters:** Fine-tune the forecasting model by adjusting parameters to suit specific business requirements.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Prerequisites
 
-## Running unit tests
+Before using the project, ensure the following:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Python:** Install Python on your machine. [Download Python](https://www.python.org/downloads/)
 
-## Running end-to-end tests
+- **Dependencies:** Install required Python libraries by running:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  ```bash
+  pip install pandas numpy fbprophet matplotlib plotly
